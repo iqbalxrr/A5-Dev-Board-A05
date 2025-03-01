@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> QnA Page</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="https://kit.fontawesome.com/caaa6a76d8.js" crossorigin="anonymous"></script>
+
+</head>
+<body class="container mx-auto mb-14">
+    <header>
+      <nav class="flex justify-between mt-10 text-4xl p-6 bg-white shadow-md rounded-xl"> 
+         <div class="flex items-center gap-3">
+            <img class="w-[51px] h-[51px]" src="./images/logo.png" alt="">
+            <h1 class="text-[#00303C]"><span class="font-light">Dev</span><span class="font-bold">Board</span></h1>
+         </div>
+
+         <div id="backHomePage" class="flex items-center gap-3">
+            <button class="px-4  text-white py-3 text-xl rounded-xl bg-[#3752FD]"><i class="fa-solid fa-angle-left fa-beat fa-xl"></i> Back To Desk </button>
+           
+         </div>
+      </nav>
+    </header> 
+
+    <main>
+        <h1 class="text-center text-3xl font-bold my-10">Blogs</h1>
+
+        <section class="flex flex-col gap-5 py-10">
+            <div class="bg-white rounded-xl py-5 px-4  shadow">
+                <h1 class="text-2xl font-bold text-gray-800 ">Question-1: What are the different ways to select an element in the DOM?</h1>
+                <p class="text-2xl mt-4 font-semibold  text-gray-700"> We can select DOM elements by 
+                    <ul class="list-disc ml-14 mt-2 space-y-2 text-[20px]  text-gray-700 ">
+                        <li>Using getElementById</li>
+                        <li>Using getElementByClassName</li>
+                        <li>Using getElementBYTagName</li>
+                        <li>Using querySelector</li>
+                        <li>Using querySelectorAll</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="bg-white rounded-xl py-5 px-4">
+                <h1 class="text-2xl font-bold text-gray-800 ">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+                <p class="text-2xl mt-4 font-semibold  text-gray-700">
+                    <div>
+                        <span class="font-bold text-2xl">innerHTML:</span> 
+                        <ul class="list-disc ml-14 mt-2 space-y-2 text-[20px]  text-gray-700 ">
+                            <li>If we want to set innerHTML, it replaces the entire HTML content inside the element with the new markup (including tags).</li>
+                            <li>It does not consider visibility or styling of elements.</li>
+                            <li>Purpose: get or set the HTML content (tags, attributes, text) inside an element.</li>
+                            
+                        </ul>
+                         
+                        
+                      </div>
+                  <br>
+                  <div>
+                    <span class="font-bold text-2xl">innerText:</span> 
+                    <ul class="list-disc ml-14 mt-2 space-y-2 text-[20px]  text-gray-700 ">
+                        <li>It does not include HTML tags.</li>
+                        <li>It considers the visibility of content (hidden text will be excluded).</li>
+                        <li>It adjusts whitespace (ignores excess spaces and line breaks).</li>
+                        <li>Purpose: get or set the visible text content inside an element</li>
+                        
+                    </ul>
+                    
+                  </div>
+                  <br>
+                  <div>
+                    <span class="font-bold text-2xl">textContent:</span> 
+                    <ul class=" list-disc ml-14 mt-2 space-y-2 text-[20px]  text-gray-700 ">
+                        <li>It does not include HTML tags.</li>
+                        <li>It does not consider visibility (it returns all text, including hidden elements).</li>
+                        <li>It preserves whitespace formatting but ignores extra spaces or line breaks.</li>
+                        <li>Purpose: get or sets the text content of an element, excluding any HTML markup</li>
+                        
+                    </ul>
+                    
+                  </div>
+                  
+                
+                </p>
+            </div>
+            <div class="bg-white rounded-xl py-5 px-4">
+                <h1 class="text-2xl font-bold ">Question-3: What is event delegation in the DOM?
+
+                </h1>
+                <p class="text-[20px] mt-4   text-gray-700">
+
+                    Event delegation is a technique in JavaScript that allows you to handle events for multiple elements in a more efficient way. Instead of attaching event listeners to each individual element, you can attach a single event listener to a parent element and use event delegation to handle events on its child elements.
+                   
+            </div>
+            <div class="bg-white rounded-xl py-5 px-4">
+                <h1 class="text-2xl font-bold ">Question-4: What is event bubbling in the DOM?
+
+                </h1>
+                <p  class="text-[20px] mt-4   text-gray-700" >
+
+                    Event bubbling is a concept in the Document Object Model (DOM) where events propagate from the most specific element to the least specific element. When an event occurs on a specific element, it first triggers the event on that element, and then it bubbles up to its parent elements, and so on, until it reaches the root element (usually the document object).
+
+                </p>
+            </div>
+            <div class="bg-white rounded-xl py-5 px-4">
+                <h1 class="text-2xl font-bold ">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+                <p  class="text-[20px] mt-4   text-gray-700" >
+                    To add, remove, and modify HTML elements using JavaScript, we can use methods like createElement , appendChild , removeChild , and properties like innerHTML and textContent 
+                </p>
+            </div>
+        </section>
+
+    </main>
+    <script src="script/qnaPage.js"></script>
+</body>
+</html>

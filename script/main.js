@@ -71,16 +71,10 @@ document.getElementById("clear-btn").addEventListener("click", function () {
   const addActivity = document.getElementById("activity");
 
   addActivity.innerHTML = "";
-
-  // const buttons = document.querySelectorAll('.card button');
-
-  // for( const button of buttons) {
-
-  //     button.disabled = false;
-  //     button.classList.remove('bg-gray-300', 'text-gray-500')
-  //     button.classList.add('bg-[#3752FD]', 'text-white')
-
-  // }
+ 
+//   refresh page
+  window.location.reload();
+  
 });
 
 // discover card

@@ -98,6 +98,17 @@ document.getElementById('clear-btn').addEventListener('click', function(){
 
     addActivity.innerHTML = '';
 
+    // const buttons = document.querySelectorAll('.card button');
+
+    // for( const button of buttons) {
+
+    //     button.disabled = false;
+    //     button.classList.remove('bg-gray-300', 'text-gray-500')
+    //     button.classList.add('bg-[#3752FD]', 'text-white')
+        
+    // }
+
+
   
 
 
